@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { OutputPanel } from './components/OutputPanel';
 import type { SocialContent, GenerationMode, Language } from './types';
 import { generateSocialContent } from './services/geminiService';
 
@@ -78,8 +77,6 @@ const App: React.FC = () => {
             onGenerate={handleGenerate}
             isLoading={isLoading}
           />
-          <OutputPanel
-            content={generatedContent}
             isLoading={isLoading}
             error={error}
           />
