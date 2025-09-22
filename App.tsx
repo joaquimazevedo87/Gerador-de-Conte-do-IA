@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { InputPanel } from './components/InputPanel';
 import { OutputPanel } from './components/OutputPanel';
 import type { SocialContent, GenerationMode, Language } from './types';
 import { generateSocialContent } from './services/geminiService';
@@ -64,7 +63,6 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
         <main className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <InputPanel
             mode={mode}
             setMode={setMode}
             idea={idea}
